@@ -1,11 +1,26 @@
-# ビルドした実行ファイルを除外（必要に応じて名前を追加）
-*.exe
-mac_convert*
+# 1. Wailsのビルド成果物（絶対に除外すべきもの）
+# ここを除外しないと、数MB〜数十MBの .exe や .app が履歴に残ってしまいます
+build/bin/
+build/obj/
+
+# 2. フロントエンドのパッケージ（非常に容量が大きい）
+# `npm install` すれば誰でも再構築できるため不要です
+frontend/node_modules/
+
+# 3. macOS / Windows のシステムファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 4. エディタやIDEの一時ファイル
+.idea/
+.vscode/
+*.swp
+
+# 5. Go言語のローカル環境設定ファイルなど
+.env
 
 # テスト用のドキュメントを除外
 *.doc
 *.docx
 *.pdf
-
-# macOS特有の隠しファイルを除外
-.DS_Store
