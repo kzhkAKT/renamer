@@ -1,5 +1,5 @@
 body {
-    font-family: 'Hiragino Sans', 'Meiryo', sans-serif; /* OS標準の日本語フォントを自動適用 */
+    font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f5f5f5;
@@ -12,6 +12,7 @@ body {
     height: 90vh;
 }
 
+/* 添字入力エリア */
 .header {
     margin-bottom: 15px;
 }
@@ -26,23 +27,48 @@ body {
     border-radius: 4px;
 }
 
+/* リスト全体のレイアウト */
 .list-header, .list-row {
     display: flex;
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
 
+/* リストの見出し */
 .list-header {
     font-weight: bold;
     background-color: #e0e0e0;
 }
 
+/* カラム（列）の基本設定 */
 .col {
     flex: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     padding-right: 10px;
+    display: flex;
+    align-items: center; /* 文字を縦方向の中央に揃える */
+}
+
+/* データ行（ファイル名のリスト）の背景 */
+.list-row {
+    background-color: #fff;
+}
+
+/* ★追加：変更前（左側）のデザイン */
+.col-old {
+    color: #777; /* 少しグレーにしてトーンダウン */
+}
+
+/* ★追加：変更後（右側）のデザイン */
+.col-new {
+    background-color: #e8f4ff; /* 優しいライトブルーの背景 */
+    color: #1a4d7a; /* 文字色も青系統の暗い色にして視認性を確保 */
+    font-weight: 500; /* 少し太字にして強調 */
+    border-radius: 4px; /* 角に丸みをつける */
+    padding: 5px 10px; /* 背景色の中の余白を調整して見やすく */
+    margin-right: 10px;
 }
 
 /* ドラッグ＆ドロップ領域のデザイン */
@@ -63,6 +89,7 @@ body {
     border-color: #0078d7;
 }
 
+/* 「ここにファイルをドラッグ＆ドロップ」の文字 */
 #placeholder-text {
     position: absolute;
     top: 50%;
@@ -73,7 +100,7 @@ body {
     pointer-events: none;
 }
 
-/* ★ここに追加：注意書きのデザイン */
+/* 試験版の注意書きデザイン */
 .disclaimer {
     text-align: center;
     font-size: 12px;

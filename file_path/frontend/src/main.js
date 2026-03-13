@@ -45,12 +45,14 @@ function updateList() {
         const row = document.createElement('div');
         row.className = 'list-row';
 
+        // ★変更前（左側）のカラム作成： 'col-old' という目印を追加
         const oldNameCol = document.createElement('div');
-        oldNameCol.className = 'col';
+        oldNameCol.className = 'col col-old';
         oldNameCol.textContent = fileName;
 
+        // ★変更後（右側）のカラム作成： 'col-new' という目印を追加
         const newNameCol = document.createElement('div');
-        newNameCol.className = 'col';
+        newNameCol.className = 'col col-new';
         newNameCol.textContent = prefix + fileName;
 
         row.appendChild(oldNameCol);
