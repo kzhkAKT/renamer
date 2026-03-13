@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ファイル名プレビューアー</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+            <label for="prefix" style="font-weight: bold;">添字入力(prefix):</label>
+            <input type="text" id="prefix" placeholder="ここに添字を入力 (例: 2026年度_)">
+        </div>
+        
+        <div class="list-header">
+            <div class="col">drag & drop file name</div>
+            <div class="col">prefix + new file name</div>
+        </div>
+        
+        <div id="drop-zone">
+            <div id="file-list"></div>
+            <div id="placeholder-text">ここにファイルをドラッグ＆ドロップ</div>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+    このアプリは動作確認のための試作品です
+    </div>
+    
+    <script src="./src/main.js" type="module"></script>
+</body>
+</html>
