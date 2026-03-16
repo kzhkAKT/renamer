@@ -5,14 +5,31 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>ファイル名プレビューアー</title>
     
-  <script type="module" crossorigin src="/assets/index.af51c9f2.js"></script>
-  <link rel="stylesheet" href="/assets/index.4f6cfd46.css">
+  <script type="module" crossorigin src="/assets/index.f2ba75cf.js"></script>
+  <link rel="stylesheet" href="/assets/index.c0e85a65.css">
 </head>
 <body>
     <div id="app">
         <div class="header">
             <label for="prefix" style="font-weight: bold;">添字入力(prefix):</label>
             <input type="text" id="prefix" placeholder="ここに添字を入力 (例: 2026年度_)">
+            
+            <div class="options-area">
+                <div class="dir-selection">
+                    <label style="font-weight: bold; font-size: 14px;">保存先フォルダ (空欄なら元の場所):</label>
+                    <div class="dir-input-group">
+                        <input type="text" id="dest-dir" readonly placeholder="選択されていません">
+                        <button id="select-dir-btn">選択</button>
+                        <button id="clear-dir-btn">クリア</button>
+                    </div>
+                </div>
+                <div class="copy-mode-selection">
+                    <label style="font-weight: bold; cursor: pointer; font-size: 14px;">
+                        <input type="checkbox" id="copy-mode">
+                        元のファイルを残す (コピーを作成する)
+                    </label>
+                </div>
+            </div>
         </div>
         
         <div class="list-header">

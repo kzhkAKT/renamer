@@ -131,3 +131,39 @@ body {
 #quit-btn:hover {
     background-color: #ccc; /* マウスを乗せたら少し濃くする */
 }
+
+/* ★ここに追加：オプション設定エリアのデザイン */
+.options-area {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f0f4f8; /* 薄い青みがかったグレー */
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+}
+
+.dir-input-group {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#dest-dir {
+    flex: 1;
+    background-color: #e9ecef; /* 読み取り専用っぽい色 */
+    color: #555;
+    margin-top: 0;
+    cursor: not-allowed;
+}
+
+#select-dir-btn, #clear-dir-btn {
+    margin-left: 8px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#select-dir-btn:hover, #clear-dir-btn:hover {
+    background-color: #e0e0e0;
+}

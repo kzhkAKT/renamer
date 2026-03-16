@@ -6,6 +6,10 @@ export function Greet(arg1) {
   return window['go']['main']['App']['Greet'](arg1);
 }
 
-export function RenameFiles(arg1, arg2) {
-  return window['go']['main']['App']['RenameFiles'](arg1, arg2);
+export function RenameFiles(arg1, arg2, arg3, arg4) {
+  return window['go']['main']['App']['RenameFiles'](arg1, arg2, arg3, arg4);
+}
+
+export function SelectDirectory() {
+  return window['go']['main']['App']['SelectDirectory']();
 }

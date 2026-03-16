@@ -3,4 +3,6 @@
 
 export function Greet(arg1:string):Promise<string>;
 
-export function RenameFiles(arg1:string,arg2:Array<string>):Promise<string>;
+export function RenameFiles(arg1:string,arg2:Array<string>,arg3:string,arg4:boolean):Promise<string>;
+
+export function SelectDirectory():Promise<string>;
