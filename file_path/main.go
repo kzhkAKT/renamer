@@ -28,6 +28,10 @@ func main() {
 		Bind: []interface{}{
 			app,
 		},
+		// ★ここから3行を追加 (Wailsのネイティブドロップを有効化)
+		DragAndDrop: &options.DragAndDrop{
+			EnableFileDrop: true,
+		},
 	})
 
 	if err != nil {

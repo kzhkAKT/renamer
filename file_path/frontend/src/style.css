@@ -109,3 +109,25 @@ body {
     padding-top: 10px;
     border-top: 1px dashed #ccc;
 }
+
+/* ★ここに追加：アクションエリアとボタンのデザイン */
+.action-area {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end; /* ボタンを右寄せにする */
+}
+
+#quit-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #333;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#quit-btn:hover {
+    background-color: #ccc; /* マウスを乗せたら少し濃くする */
+}
